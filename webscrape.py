@@ -17,6 +17,7 @@ def login_and_scrape(url, output_file):
     login_url = os.getenv('LOGIN_URL')
     username = os.getenv('USERNAME')
     password = os.getenv('PASSWORD')
+    chromedriver_path = os.getenv('CHROMEDRIVER_PATH')
 
     # Set up Selenium with ChromeOptions and Service
     chrome_options = Options()
@@ -25,7 +26,7 @@ def login_and_scrape(url, output_file):
     chrome_options.add_argument("--disable-dev-shm-usage")
     
     # Adjust path to your ChromeDriver executable
-    service = Service('/Users/annamariakoutsoras/Documents/SOC Learnworlds/chromedriver')
+    service = Service(chromedriver_path)
     driver = webdriver.Chrome(service=service, options=chrome_options)
     driver.get(login_url)
 
