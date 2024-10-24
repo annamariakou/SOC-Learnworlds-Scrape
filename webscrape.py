@@ -92,8 +92,8 @@ def login_and_scrape(url, output_file):
 
 # Usage
 login_and_scrape(
-    'https://learn.schoolofcode.co.uk/path-player?courseid=bc17-on&unit=6681516e59b7881aa000042cUnit',  # Protected page URL
-    'output.md'  # Desired output file name
+    'https://learn.schoolofcode.co.uk/path-player?courseid=bc17-on&unit=6681516e59b7881aa000042cUnit', 
+    'output.md'  
 )
 
 
